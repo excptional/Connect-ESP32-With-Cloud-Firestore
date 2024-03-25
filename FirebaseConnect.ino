@@ -3,10 +3,10 @@
 #include <addons/TokenHelper.h>
 
 // Define your Firebase credentials and WiFi credentials
-#define WIFI_SSID "Redmi Note 7 Pro"
-#define WIFI_PASSWORD "8777264639"
-#define FIREBASE_PROJECT_ID "pawsitive-smart-care"
-#define FIREBASE_API_KEY "AIzaSyBvkhXCFrapcw0HHvnDVB6sTVI7cBGMpBs"
+#define WIFI_SSID "WiFi Name"
+#define WIFI_PASSWORD "WiFi Password"
+#define FIREBASE_PROJECT_ID "Firebase Project ID"
+#define FIREBASE_API_KEY "Firebse web API key"
 
 FirebaseConfig fconfig;
 FirebaseData fdata;
@@ -23,16 +23,13 @@ void setup() {
 
 
 void loop() {
-  String name = "The Bikash Dutta";
-  String phoneNumber = "8420248002";
+  String name = "Excptional";
+  String phoneNumber = "8621458721";
 
   if(sendData){
     uploadDocument(name, phoneNumber);
   }
   
-
-// Wait before uploading again (optional)
-//  delay(10000);
 }
 
 void connectToWiFi(){
