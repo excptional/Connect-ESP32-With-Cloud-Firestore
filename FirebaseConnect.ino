@@ -53,7 +53,7 @@ void configureFirebase(){
   if (Firebase.ready()) {
     Serial.println("Connected to Firestore!");
   } else {
-    Serial.println("Failed to connect to Firestore :(");
+    Serial.println("Failed to connect to Firestore");
   }
   
   Firebase.reconnectWiFi(true);
